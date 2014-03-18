@@ -1,7 +1,12 @@
-var click = function() {
-
-
-var el = document.getElementByiClass("top"); 
-el.style.cssText="margin: -10px 0 0 10px; height: 80px; width: 80px; margin-top: -130px; margin-left: 60px; z-index: 1;"; 
-            };
-
+$(document).ready(function(){
+        $('#donatebutton').click(function () {
+                $('#qrcode').toggleClass('button-active-top');
+                $('#addbot').toggleClass('button-active-bottom');
+		$("#displayLeft").css("visibility", "visible");
+		if ($("#displayRight").css("visibility") === "visible") {
+			$("#displayRight").css("visibility", "hidden"); 
+			$("#displayLeft").css("visibility", "hidden")} else {
+				$("#displayRight").css("visibility", "visible"); 
+				$("#displayLeft").css("visibility", "visible")};
+                });
+        });

@@ -74,7 +74,13 @@ a {
         border-radius: 0px 0px 8px 8px;
 }
 
-/*Three blocks of additional bottom block*/
+/*Three blocks of additional bottom block
+.button-active-left #displayLeft {
+visibility:visible;
+}
+.button-active-right #displayRight {
+visibility:visible;
+}*/
 
 #displayTop {
 display: block;
@@ -156,7 +162,7 @@ border-radius: 0px;
           box-shadow: 2px 3px 8px rgba(5,5,5,5);   
 }
 
-.button:active .top {
+.button-active-top {
   margin: -10px 0 0 10px;
   height: 80px;
   width: 80px;
@@ -168,7 +174,7 @@ border-radius: 0px;
   transform: scale(5);
 }
  
-.button:active .bottom {
+.button-active-bottom {
   height: 80px;
   width: 180px;
   margin-top: 0%;
@@ -176,13 +182,7 @@ border-radius: 0px;
   background: rgb(0,143,183);
   visibility: visible;
 }
-.button:active #displayLeft {
-visibility:visible;
-}
-.button:active #displayRight {
-visibility:visible;
-}
-.button:active   {
+.button-active   {
   background: #284C7E; /* Old browsers */
   background: -moz-linear-gradient(top,  #009ec3 36%, #284C7E 100%); /* FF3.6+ */
   background: -webkit-gradient(linear, left top, left bottom, color-stop(36%,#009ec3), color-stop(100%,#284C7E)); /* Chrome,Safari4+ */

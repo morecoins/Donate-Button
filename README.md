@@ -1,4 +1,5 @@
 Donate-Button
 =============
 
-Donate button for Bitcoin and forks
+CSS + HTML + JS Donate button for Bitcoin and forks
+

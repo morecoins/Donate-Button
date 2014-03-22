@@ -8,7 +8,8 @@ var address = document.getElementById('qrText').value;
             $("#displayRight").css("visibility", "hidden");
             $("#displayLeft").css("visibility", "hidden")} else {
             $("#displayRight").css("visibility", "visible");
-            $("#displayLeft").css("visibility", "visible")};
+            $("#displayLeft").css("visibility", "visible")
+        }
     });
 
 $.ajax({

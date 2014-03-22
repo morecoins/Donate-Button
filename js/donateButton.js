@@ -1,7 +1,21 @@
 $(document).ready(function(){
-var address = document.getElementById('qrText').value;
+var coinAddress = document.getElementById('qrText').value;
+var coinName = document.getElementById('qrText').name;
+var coinURL = "";
+
+    switch (coinName) {
+        case "DigiByte":
+            coinURL = "http://explorer.cryptopoolmining.com/chain/DigiByte/q/getreceivedbyaddress/";
+            break
+        case "Bitcoin":
+            alert('NOT DONE YET')
+            break
+        default:
+            alert('Visit http://morecoins.org/ and we will create button for your coin')
+    }
 
     $('#donatebutton').click(function () {
+        document.getElementById('qrText').select();
         $('#qrcode').toggleClass('button-active-top');
         $('#addbot').toggleClass('button-active-bottom');
         if ($("#displayRight").css("visibility") === "visible") {
@@ -13,11 +27,11 @@ var address = document.getElementById('qrText').value;
     });
 
 $.ajax({
-        url: "http://explorer.cryptopoolmining.com/chain/DigiByte/q/getreceivedbyaddress/"+address+"?format=jsonp",
+        url: coinURL+coinAddress+"?format=jsonp",
         dataType: "jsonp",
         jsonpCallback: 'jsonp',
         success: function(data) {
-           $('#displayRight').html(data+ " Total Resived");
+           $('#displayRight').html(data+ " Resived");
         }
     });
 

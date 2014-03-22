@@ -542,7 +542,7 @@ if (typeof console === 'object' && typeof console.log === 'function') {
 }
 
 // This processes a JS string into a C-line array of numbers, 0-terminated.
-// For LLVM-originating strings, see parser.js:parseLLVMString function
+// For LLVM-originating strings, see donateButton.js:parseLLVMString function
 function intArrayFromString(stringy, dontAddNull) {
   var ret = [];
   var t;

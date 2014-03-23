@@ -8,10 +8,10 @@ var coinURL = "";
             coinURL = "http://explorer.cryptopoolmining.com/chain/DigiByte/q/getreceivedbyaddress/";
             break
         case "Bitcoin":
-            alert('NOT DONE YET')
+            alert('NOT DONE YET');
             break
         default:
-            alert('Visit http://morecoins.org/ and we will create button for your coin')
+            alert('Visit http://morecoins.org/ and we will create button for your coin');
     }
 
     $('#donatebutton').click(function () {
